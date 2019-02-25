@@ -1,0 +1,42 @@
+{
+  "name": "pre",
+  "version": "0.0.1",
+  "description": "prep for express app",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc",
+    "start": "node ./dist/index.js",
+    "test": "jest --detectOpenHandles --verbose"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.spec.+(ts|js)"
+    ]
+  },
+  "author": "Andrej Novikov",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@types/request-promise": "^4.1.42",
+    "express": "^4.16.4",
+    "request-promise": "^4.2.4",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/jest": "^24.0.6",
+    "@types/supertest": "^2.0.7",
+    "@typescript-eslint/eslint-plugin": "^1.4.1",
+    "@typescript-eslint/parser": "^1.4.1",
+    "eslint": "^5.14.1",
+    "jest": "^24.1.0",
+    "supertest": "^3.4.2",
+    "ts-jest": "^24.0.0"
+  }
+}

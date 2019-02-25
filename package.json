@@ -1,11 +1,12 @@
 {
-  "name": "pre",
+  "name": "EBF",
   "version": "0.0.1",
-  "description": "prep for express app",
+  "description": "Eth balance fetcher",
   "main": "dist/index.js",
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc",
     "start": "node ./dist/index.js",
+    "lint": "$(npm bin)/eslint './src/**/*.ts'",
     "test": "jest --detectOpenHandles --verbose"
   },
   "jest": {

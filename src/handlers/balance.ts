@@ -1,7 +1,7 @@
 import {Request, Response} from 'express'
 import {getBalance} from '../providers/balance'
 
-const getBalanceHandler = async (req: Request, res: Response) => {
+const getBalanceHandler = async (req: Request, res: Response): Promise<void> => {
   let balance
   try {
     balance = await getBalance(req.params.ethaddr)

@@ -1,6 +1,3 @@
-import {IncomingMessage} from 'http'
-import {get} from 'https'
-
 import request from 'request-promise'
 
 type EthAddress = string

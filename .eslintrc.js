@@ -8,6 +8,10 @@ module.exports =  {
          sourceType:  'module',  // Allows for the use of imports
        },
     rules:  {
+      "@typescript-eslint/indent": ["error", 2],
+      "@typescript-eslint/member-delimiter-style": {
+        "delimiter": "none"
+      }
           // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
           // e.g. "@typescript-eslint/explicit-function-return-type": "off",
     },
